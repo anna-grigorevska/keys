@@ -10,10 +10,10 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
-var player;
+var players = [];
 function onYouTubeIframeAPIReady() {
   videos.map(function (video, index) {
-    player = new YT.Player('player-' + index, {
+    players[index] = new YT.Player('player-' + index, {
       videoId: video,
       events: {
         'onReady': onPlayerReady,
@@ -24,20 +24,28 @@ function onYouTubeIframeAPIReady() {
 }
 
 // 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
+function onPlayerReady(event) {}
 
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
 //    the player should play for six seconds and then stop.
-var done = false;
 function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000);
-    done = true;
+  if (event.data == YT.PlayerState.UNSTARTED || event.data == YT.PlayerState.PLAYING) {
+    $(event.target.a).parents('.video').addClass('play');
+    $('body').addClass('video-play');
+  }
+  if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED || event.data == YT.PlayerState.CUED) {
+    $(event.target.a).parents('.video').removeClass('play');
+    $('body').removeClass('video-play');
   }
 }
-function stopVideo() {
-  player.stopVideo();
-}
+$('.close').click(function () {
+  var parent = $(this).parents('.video');
+  var id = parent.data('id');
+  players[id].stopVideo();
+});
+$('.video .text-wrap').click(function () {
+  var parent = $(this).parents('.video');
+  var id = parent.data('id');
+  players[id].playVideo();
+});
