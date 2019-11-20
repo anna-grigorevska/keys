@@ -3,18 +3,825 @@
     width: 1270px;
   }
 }
-@media(max-width: 1200px) {
+@media (min-width: 768px){
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px){
+  .container {
+    max-width: 100%;
+  }
+}
 
+  
+@media(max-width: 1200px) {
+  header{
+    .tell-header a{
+      font-size: 30px;
+    }
+  }
+  main{
+    .home{
+      // background-size: cover;
+      padding-top: 80px;
+      .info-home{
+        h2{
+          font-size: 25px;
+          margin-bottom: 13px;
+        }
+        h1{
+          margin-bottom: 18px;
+        }
+        p{
+          font-size: 21px;
+          margin-top: 15px;
+          margin-bottom: 20px;
+        }
+        button{
+          font-size: 18px;
+          height: 50px;
+        }
+      } 
+      .benefits{
+        margin-top: 125px;
+        .wrap-bfs{
+          margin-bottom: 5px;
+          img{
+            height: 50px;
+            width: 50px;
+          }
+          p{
+            font-size: 20px;
+          }
+        }
+      }
+      .question{
+        padding-top: 15px;
+        .wrap-question{
+          margin-bottom: 12px;
+          P{
+            font-size: 22px;
+          }
+          img{
+            height: 54px;
+            width: 28px;
+          }
+        }
+      }
+    }
+    .black-door{
+      padding-top: 77px;
+      h2{
+        font-size: 40px;
+      }
+      p{
+        font-size: 18px;
+      }
+      .video{
+        .player{
+          left: -100px;
+          top: 55px;
+        }
+      }
+    }
+    .scheme{
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 160px 0 152px;
+      h2{
+        font-size: 35px;
+        margin-bottom: 15px;
+      }
+      h3{
+        font-size: 20px;
+        margin-bottom: -30px;
+      }
+      .wrap-scheme a .key-white{
+        padding: 12px 12px 5px;
+        p{
+          font-size: 13px;
+        }
+      } 
+      button{
+        font-size: 18px;
+        height: 50px;
+      }
+    }
+    .accesses{
+      padding-bottom: 40px;
+      margin-top: -50px;
+      h2{
+        font-size: 40px;
+      }
+      .wrap-accesses{
+        .table{
+          thead tr th,
+          tbody tr td{
+            font-size: 14px;
+          }
+        }
+        .text p{
+          font-size: 17px;
+        }
+      } 
+    }
+    .master-system{
+      padding-top: 40px;
+      padding-bottom: 25px;
+      h2{
+        font-size: 40px;
+        margin-bottom: 25px;
+      }
+      img{
+        height: 110px;
+        width: 103px;
+      }
+      h3{
+        font-size: 22px;
+        margin-bottom: 24px;
+      }
+      P{
+        font-size: 18px;
+      }
+    }
+    .advantage{
+      padding-top: 35px;
+      h2{
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+      .wrap-advantage{
+        margin-bottom: 20px; 
+        p{
+          font-size: 18px;
+        }
+        img{
+          margin-right: 15px;
+        }
+      }
+      button{
+        font-size: 18px;
+        height: 50px;
+      }
+    }
+    .good-master-system{
+      padding-top: 10vw;
+      h2{
+        font-size: 40px;
+      }
+      .wrap-good-ms p{
+        font-size: 18px;
+      }
+      h4{
+        font-size: 28px;
+      }
+    }
+    .video-master{
+      margin-top: -10vw;
+      h2{
+        font-size: 40px;
+        margin-bottom: 35px;
+      }
+      button{
+        font-size: 18px;
+        height: 55px;
+      }
+    }
+    .step-master{
+      padding-top: 60px;
+      h2{
+        font-size: 40px;
+      }
+      .wraps-step{
+        .step{
+          p{
+            font-size: 16px;
+          }
+          .title {
+            h4{
+              margin-left: 11px;
+              font-size: 22px;
+            }
+          }
+        } 
+      }
+      button{
+        font-size: 18px;
+        height: 55px;
+        &::before{
+          width: 57%;
+        }
+        &:after{
+          width: 57%;
+        }
+      }
+    }
+    .professional{
+      padding-top: 40px;
+      h2{
+        font-size: 40px;
+      }
+      h3{
+        font-size: 28px;
+      }
+      h4{
+        font-size: 19px;
+      }
+      .statistics{
+        align-items: center;
+        justify-content: center;
+        .wrap-statistic{
+          margin-right: 25px;
+          .up{
+            margin-bottom: -70px;
+            P{
+              font-size: 30px;
+            }
+            img{
+              width: 110px;
+              height: 110px;
+            }
+          }
+          .statistic-img-wrap{
+            img{
+              width: 280px;
+              height: 290px;
+            }
+            p{
+              font-size: 16px;
+            }
+          }
+        }
+      } 
+      h5{
+        font-size: 40px;
+        margin-bottom: 40px;
+        &::after{
+          left: 88%;
+        }
+        &::before{
+          right: 88%;
+        }
+      }
+    }
+    .castles{
+      .wrap-castles-max{
+        .text{
+          .text-inner{
+            padding: 35px 0 20px 30px;
+            h3{
+              font-size: 27px;
+              margin: 15px 0;
+            }
+            p{
+              font-size: 16px;
+            }
+            .castle-button{
+              height: 45px;
+              font-size: 19px;
+            }
+          }
+        }
+      }
+      .castles-black{
+        .container{
+          padding: 60px 0 40px;
+        }
+        .wrap-castles .text p{
+          font-size: 17px;
+        }
+      }
+    }
+    .form{
+      padding: 30px 0 50px;
+      h2{
+        font-size: 28px;
+      }
+      .wrap-form{
+        h3{
+          font-size: 28px;
+        }
+        button{
+          font-size: 18px;
+          margin-top: 20px;
+        }
+        h5{
+          font-size: 15px;
+        }
+      } 
+    }
+  }
 }
 @media(max-width: 992px) {
-
+  header{
+    height: 7vw;
+    .tell-header a{
+      font-size: 26px;
+    }
+  }
+  main{
+    .home{
+      .info-home{
+        margin-bottom: 40px;
+        h2, p{
+          font-size: 18px;
+        }
+        button{
+          font-size: 15px;
+          height: 40px;
+        }
+      }
+      .benefits{
+        margin-top: 30px;
+        .wrap-bfs {
+          img{
+            margin-right: 10px;
+          }
+          p{
+            font-size: 19px;
+          }
+        }
+        
+      }
+      .question{
+        .wrap-question{
+          P{
+            font-size: 19px;
+          }
+        } 
+      } 
+    }
+    .black-door{
+      margin-top: 0;
+      background: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding-top: 40px;
+      padding-bottom: 90px;
+      h2{
+        font-size: 33px;
+        text-align: center;
+      }
+      p{
+        font-size: 20px;
+      }
+      .video .player{
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+    .scheme{
+      h3{
+        margin-bottom: 0;
+        font-size: 30px;
+      }
+      .wrap-scheme a .key-white img{
+        height: 40px;
+        width: 90px;
+      }
+    }
+    .accesses{
+      .wrap-accesses{
+        flex-wrap: wrap;
+        .table{
+          width: 100%;
+          tbody tr td,
+          thead tr th{
+            font-size: 16px;
+          }
+        }
+        .text{
+          width: 100%;
+        }
+      }
+    }
+    .master-system{
+      h2{
+        font-size: 36px;
+      }
+    }
+    .good-master-system{
+      padding-top: 9vw;
+      h2{
+        font-size: 35px;
+      }
+      h4{
+        font-size: 22px;
+      }
+    }
+    .video-master{
+      .wrap-video{
+        .video{
+          .text-wrap{
+            p{
+              font-size: 15px;
+            }
+            h4{
+              font-size: 21px;
+            }
+          }
+        }
+      }   
+    }
+    .step-master{
+      .wraps-step{
+        flex-wrap: wrap;
+        .step{
+          width: 50%;
+          P{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .professional{
+      .statistics{
+        flex-wrap: wrap;
+      }
+      h5{
+        font-size: 33px;
+        &::before{
+          right: 94%;
+        }
+        &::after{
+          left: 94%;
+        }
+      }
+    }
+    .castles{
+      .wrap-castles-max{
+        flex-wrap: wrap;
+        img{
+          width: 100%;
+        }
+        .text{
+          width: 100%;
+          &::before{
+            width: 100vw;
+            left: -15px;
+          }
+          .text-inner{
+            img{
+              width: 20%;
+            }
+            h3{
+              font-size: 30px;
+            }
+            p{
+              font-size: 19px;
+            }
+          }
+        }
+      }   
+      .castles-black{
+        .wrap-castles{
+          flex-wrap: wrap;
+          &:last-child{
+            img{
+              order: 1;
+            }
+            .text{
+              order: 2;
+            }
+          }
+          img{
+            margin-left: 20px;
+          }
+          .text{
+            &:nth-child(1){
+              border-bottom: none;
+            }
+            
+            p{
+              font-size: 18px;
+            }
+          } 
+        }
+      }
+    }
+    .form{
+      h2{
+        font-size: 22px;
+      }
+      .wrap-form h3{
+        font-size: 25px;
+      }
+    } 
+  }
 }
 @media(max-width: 767px) {
-
+  header {
+    height: 10vw;
+    .tell-header a{
+      font-size: 20px;
+    }
+  }
+  main{
+    .home{
+      padding-bottom: 20px;
+      padding-top: 130px;
+      background: none;
+      .info-home{
+        text-align: center;
+      }
+      .benefits{
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 60px;
+        padding: 30px 0;
+      }
+      .question{
+        padding: 30px 0;
+      }
+    }
+    .black-door{
+      p{
+        font-size: 18px;
+      }
+      .video{
+        height: 250px;
+      }
+    }
+    .scheme{
+      background: none;
+      background-color: #5d5d5d;
+      padding: 60px 0 130px;
+      h2{
+        font-size: 28px;
+      }
+      .wrap-scheme{
+        h3{
+          font-size: 25px;
+          margin-bottom: 15px;
+        }
+      } 
+      .tabs-wrap{
+        flex-wrap: wrap;
+        
+        ul{
+          width: 100%;
+          justify-content: center;
+          
+          li.nav-item{
+            width: 25%;
+            margin-left: 20px;
+          }
+        }
+        .tab-content{
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
+    .accesses{
+      padding-top: 30px;
+      h2{
+        font-size: 30px;
+      }
+      .wrap-accesses{
+        .table{
+          margin-right: 0;
+          thead tr th,
+          tbody tr td{
+            font-size: 15px;
+            padding: 7px;
+          }
+        }
+      }
+    }
+    .master-system{
+      h2{
+        font-size: 27px;
+      }
+    } 
+    .step-master{
+      h2{
+        font-size: 30px;
+      }
+      .wraps-step{
+        .step P{
+          font-size: 16px;
+        }
+      } 
+    }
+    .good-master-system{
+      h4{
+        font-size: 19px;
+      }
+    } 
+    .video-master{
+      margin-top: -5px;
+    }
+    .professional{
+      h2{
+        font-size: 30px;
+      }
+      h3{
+        font-size: 24px;
+      }
+      h4{
+        font-size: 17px;
+      }
+      .wrap-statistic{
+        margin-bottom: 25px;
+      }
+      h5{
+        margin-top: 35px;
+        font-size: 25px;
+      }
+    }
+    .castles{
+      .wrap-castles-max{
+        .img{
+          width: 100%;
+        }
+        .text .text-inner{
+          padding-left: 0;
+          h3{
+            font-size: 25px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      } 
+      .castles-black{
+        .wrap-castles{
+          .text p{
+            font-size: 16px;
+          }
+          img{
+            margin-left: 0;
+          }
+        } 
+      } 
+    }
+  }
 }
 @media(max-width: 550px) {
-
+  main{
+    .black-door{
+      p{
+        font-size: 16px;
+      }
+    } 
+    .accesses .wrap-accesses .table{
+      thead tr th,
+      tbody tr td{
+        font-size: 13px;
+      }
+    }
+    .good-master-system{
+      padding-top: 13vw;
+      padding-bottom: 32vw;
+      h2 {
+        font-size: 30px;
+      }
+    }
+    .scheme .wrap-scheme a .key-white p {
+      font-size: 10px;
+    }
+  }
 }
 @media(max-width: 480px) {
-
+  header {
+    height: 11vw;
+    min-height: 60px;
+    .tell-header a {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  }
+  main{
+    .home{
+      .info-home{
+        button{
+          padding: 0 20px;
+        }
+      } 
+      .benefits .wrap-bfs p {
+        font-size: 15px;
+      }
+      .question .wrap-question P {
+        font-size: 15px;
+        br{
+          display: none;
+        }
+      }
+    }
+    .black-door{
+      h2 {
+        font-size: 23px;
+      }
+      .video {
+        height: 200px;
+      }
+    } 
+    .scheme{
+      .tabs-wrap ul li.nav-item {
+        width: 32%;
+        margin-left: 2%;
+        &:nth-child(2){
+          margin-left: 0;
+        }
+      }
+      .wrap-scheme a{
+        height: 100%;
+        .key-white{
+          padding: 8px 5px 3px;
+          height: 100%;
+          img {
+            height: 20px;
+            width: 40px;
+          }
+          p{
+            font-size: 9px;
+          }
+        }
+      }
+      button{
+        font-size: 15px;
+        padding: 0 25px;
+      }
+    }  
+    .accesses{
+      h2 {
+       font-size: 22px;
+      }
+    } 
+    .advantage{
+      h2 {
+        font-size: 26px;
+      }
+      .wrap-advantage p {
+        font-size: 16px;
+      }
+      button {
+        font-size: 15px;
+        padding: 0px 25px;
+      }
+    } 
+    .good-master-system{
+      background: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding-bottom: 10vw;
+      h2 {
+        font-size: 24px;
+      }
+      .wrap-good-ms p {
+        font-size: 12px;
+      }
+    }
+    .video-master{
+      padding-top: 20px;
+      h2{
+        font-size: 30px;
+      }
+      .wrap-video .video .text-wrap{
+      p {
+        font-size: 12px;
+      }
+      h4{
+        font-size: 16px;
+      }
+      }
+      button{
+       padding: 0 25px;
+       font-size: 15px;
+      }
+    }
+    .step-master{
+      h2 {
+        font-size: 22px;
+      }
+      .wraps-step .step {
+        width: 100%;
+      }
+      button{
+        padding: 0 25px;
+        font-size: 15px;
+      }
+    } 
+    .professional{
+      h2 {
+        font-size: 22px;
+      }
+      h3 {
+        font-size: 17px;
+      }
+      h4 {
+        font-size: 13px;
+      }
+      .statistics .wrap-statistic {
+        margin-right: 0;
+      }
+    } 
+    .castles{
+      .castles-black .wrap-castles img {
+        width: 100%;
+      }
+    } 
+    .form h2 {
+      font-size: 16px;
+    }
+  }
 }

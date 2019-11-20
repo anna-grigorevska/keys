@@ -1,6 +1,21 @@
 'use strict';
 
-var videos = ['', 'TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI'];
+$(document).ready(function () {
+  $('#myTab .nav-link').click(function (e) {
+    var _this = this;
+
+    if ($(this).hasClass('active show')) {
+      setTimeout(function () {
+        $(_this).removeClass('show active');
+        $('#myTabContent .tab-pane').removeClass('show active');
+        $('#default').addClass('show active');
+      }, 200);
+    }
+  });
+});
+'use strict';
+
+var videos = ['TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI'];
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 
