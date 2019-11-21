@@ -45,7 +45,7 @@
         }
       } 
       .benefits{
-        margin-top: 125px;
+        margin-top: 7vw;
         .wrap-bfs{
           margin-bottom: 5px;
           img{
@@ -710,6 +710,9 @@
       }
       .question .wrap-question P {
         font-size: 15px;
+        span{
+          display: inline;
+        }
         br{
           display: none;
         }
