@@ -32,6 +32,7 @@
         }
         h1{
           margin-bottom: 18px;
+          font-size: 62px;
         }
         p{
           font-size: 21px;
@@ -44,7 +45,7 @@
         }
       } 
       .benefits{
-        margin-top: 125px;
+        margin-top: 7vw;
         .wrap-bfs{
           margin-bottom: 5px;
           img{
@@ -324,6 +325,9 @@
     .home{
       .info-home{
         margin-bottom: 40px;
+        h1{
+          font-size: 45px;
+        }
         h2, p{
           font-size: 18px;
         }
@@ -694,6 +698,9 @@
   main{
     .home{
       .info-home{
+        h1{
+          font-size: 34px;
+        }
         button{
           padding: 0 20px;
         }
@@ -703,6 +710,9 @@
       }
       .question .wrap-question P {
         font-size: 15px;
+        span{
+          display: inline;
+        }
         br{
           display: none;
         }

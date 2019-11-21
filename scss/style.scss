@@ -49,7 +49,7 @@ main{
       }
       h1{
         color: #1c1818;
-        font-size: 32px;
+        font-size: 76px;
         font-weight: 700;
         margin-bottom: 30px;
       }
@@ -76,6 +76,11 @@ main{
         text-transform: uppercase;
         letter-spacing: 0.26px;
         padding: 0 76px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+          background-color: #ad1016;
+        }
       }
     }
     .benefits{
@@ -102,11 +107,16 @@ main{
           color: #1c1818;
           font-size: 32px;
           font-weight: 700;
+          line-height: 1;
+          margin-bottom: 0;
           span{
             color: #d31920;
+            display: block;
+            margin-top: 10px;
           }
         }
         img{
+          margin-bottom: 2px;
           margin-left: 30px;
         }
       }
@@ -214,12 +224,19 @@ main{
     }
     .wrap-scheme{
       h3{
-        color: #ffffff;
+        color: rgba(231,58,58,0.6);
         font-size: 36px;
         font-weight: 700;
       }
       a{
         padding: 0;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        &:hover{
+          .key-white{
+            background: #ad1016;
+          }
+        }
         .key-white{
           background: rgba(231, 58, 58, 0.6);
           border-top-left-radius: 8px;
@@ -268,6 +285,11 @@ main{
       letter-spacing: 0.26px;
       padding: 0 76px;
       margin-top: 30px;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover{
+        background-color: #ad1016;
+      }
     }
   }
   .accesses{
@@ -285,8 +307,9 @@ main{
     .wrap-accesses{
       .table{
         width: 60%;
-        margin-right: 20px;
+        margin-right: 40px;
         thead tr th{
+          padding-top: 0;
           color: #1c1718;
           font-size: 16px;
           font-weight: 700;
@@ -307,7 +330,6 @@ main{
       }
       .text{
         width: 40%;
-        padding: 50px 0 0;
         p{
           color: #181717;
           font-size: 20px;
@@ -339,7 +361,7 @@ main{
     }
     p{
       color: #181717;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 300;
     }
   }
@@ -366,13 +388,19 @@ main{
         margin-right: 20px;
         object-fit: cover;
       }
+      h3{
+        color: #181717;
+        font-size: 20px;
+        font-weight: 700;
+      }
       p{
         color: #181717;
-        font-size: 21px;
+        font-size: 20px;
         font-weight: 300;
       }
     }
     button{
+      cursor: pointer;
       height: 73px;
       background-color: #d31920;
       border: none;
@@ -382,6 +410,10 @@ main{
       text-transform: uppercase;
       letter-spacing: 0.26px;
       padding: 0 76px;
+      transition: all 0.3s;
+      &:hover{
+        background-color: #ad1016;
+      }
     }
   }
   .good-master-system{
@@ -726,6 +758,10 @@ main{
               border: 1px solid #d31920;
               background-color: #d31920;
               color: #ffffff;
+              cursor: pointer;
+              &:hover{
+                background: none;
+              }
               svg{
                 transform: rotate(180deg);
                 path {
@@ -811,6 +847,7 @@ main{
         }
       }
       button{
+        cursor: pointer;
         background-color: #d31920;
         border: none;
         height: 40px;
@@ -820,6 +857,10 @@ main{
         font-weight: 500;
         text-transform: uppercase;
         margin-top: 40px;
+        transition: all 0.3s;
+        &:hover{
+          background-color: #ad1016;
+        }
       }
       h5{
         font-size: 18px;
@@ -832,6 +873,7 @@ main{
   }
   .video-master button,
   .step-master button{
+    cursor: pointer;
     height: 73px;
     background-color: #d31920;
     border: none;
@@ -843,6 +885,10 @@ main{
     padding: 0 76px;
     margin-top: 30px;
     position: relative;
+    transition: all 0.3s;
+    &:hover{
+      background-color: #ad1016;
+    }
     &::before{
       content: "";
       width: 50%;
