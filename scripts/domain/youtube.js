@@ -1,4 +1,4 @@
-const videos = ['', 'TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI'];
+const videos = ['TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI', 'TZipNpBCmzI'];
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 
