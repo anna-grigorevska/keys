@@ -660,6 +660,12 @@
       } 
     }
   }
+  main .video-master .wrap-video .video .text-wrap{
+    min-height: 100px;
+    p{
+      margin-bottom: 0;
+    }
+  }
 }
 @media(max-width: 550px) {
   main{
