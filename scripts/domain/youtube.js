@@ -44,6 +44,12 @@ $('.close').click(function() {
   const id = parent.data('id');
   players[id].stopVideo();
 })
+$('.video').click(function() {
+  if ($(this).hasClass('play')) {
+    const id = $(this).data('id');
+    players[id].stopVideo();
+  }
+})
 $('.video .text-wrap').click(function() {
   let parent = $(this).parents('.video');
   const id = parent.data('id');

@@ -21,14 +21,26 @@ header{
   }
   .tell-header{
     a{
+      display: block;
+      position: relative;
       color: #ffffff;
       font-size: 36px;
       font-weight: 400;
       margin-left: 10px;
       text-decoration: none;
-      span{
-        color: #d52315;
-        letter-spacing: 0.36px;
+      &::before{
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        left: 50%;
+        top: calc(100% + 3px);
+        content: '';
+        transition: all .3s ease-in-out;
+      }
+      &:hover:before{
+        width: 100%;
+        left: 0;
       }
     }
   }
@@ -180,8 +192,8 @@ main{
           left: 50%;
           position: fixed;
           z-index: 101;
-          max-width: 50vw;
-          max-height: 40vh;
+          max-width: calc(100vw / 3);
+          max-height: calc(100vh / 3);
           transform: translate(-50%, -50%) scale(2);
         }
         .close{
@@ -224,7 +236,7 @@ main{
     }
     .wrap-scheme{
       h3{
-        color: rgba(231,58,58,0.6);
+        color: rgb(249, 56, 56);
         font-size: 36px;
         font-weight: 700;
       }
@@ -436,10 +448,16 @@ main{
     .wrap-good-ms{
       position: relative;
       margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 6px rgba(256, 256, 256, 0);
+      transition: all .3;
       img{
         width: 100%;
+        transform: scale(1);
+        transition: all .3s;
       }
       p{
+        padding-right: 15%;
         position: absolute;
         left: 30px;
         top: 50%;
@@ -448,6 +466,13 @@ main{
         font-size: 24px;
         font-weight: 700;
         text-transform: uppercase;
+      }
+      &:hover{
+        box-shadow: 0 0 8px 6px rgba(255,255,255,0.5);
+        img{
+          transform: scale(1.2);
+          transition: all .3s;
+        }
       }
     }
     h4{
@@ -501,8 +526,8 @@ main{
           iframe {
             position: fixed;
             z-index: 101;
-            max-width: 50vw;
-            max-height: 40vh;
+            max-width: calc(100vw / 3);
+            max-height: calc(100vh / 3);
             transform: translate(-50%, -50%) scale(2);
           }
           .close{

@@ -3579,6 +3579,12 @@ $('.close').click(function () {
   var id = parent.data('id');
   players[id].stopVideo();
 });
+$('.video').click(function () {
+  if ($(this).hasClass('play')) {
+    var id = $(this).data('id');
+    players[id].stopVideo();
+  }
+});
 $('.video .text-wrap').click(function () {
   var parent = $(this).parents('.video');
   var id = parent.data('id');
