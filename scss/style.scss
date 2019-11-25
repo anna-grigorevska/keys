@@ -24,6 +24,36 @@ header{
   .logo img{
     height: 100%;
   }
+  .navigation{
+    ul{
+      display: flex;
+      list-style: none;
+      margin-bottom: 0;
+      li{
+        margin-right: 20px;
+        a{
+          color: #fff;
+          text-decoration: none;
+          position: relative;
+          font-size: 24px;
+          &::before{
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            left: 50%;
+            top: calc(100% + 3px);
+            content: '';
+            transition: all .3s ease-in-out;
+          }
+          &:hover:before{
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
   .tell-header{
     a{
       display: block;
@@ -225,9 +255,9 @@ main{
   }
   .black-door{
     margin-top: -90px;
-    background: #000 url(../img/bg-door-black.jpg);
+    background: #000 url(../img/bg-door-black.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding-top: 80px;
     overflow: hidden;
     h2{
@@ -328,6 +358,14 @@ main{
         color: rgb(249, 56, 56);
         font-size: 36px;
         font-weight: 700;
+      }
+      .arrow{
+        img{}
+        position: relative;
+        &::before{
+          position: absolute;
+          left: 50%;
+        }
       }
       a{
         padding: 0;

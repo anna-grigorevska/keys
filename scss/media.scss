@@ -20,6 +20,11 @@
     .tell-header a{
       font-size: 30px;
     }
+    .navigation ul li {
+      a{
+        font-size: 19px;
+      }
+    }
   }
   main{
     .home{
@@ -318,7 +323,16 @@
   header{
     height: 7vw;
     .tell-header a{
-      font-size: 26px;
+      font-size: 17px;
+    }
+    .navigation ul{
+      padding-left: 8px;
+      li {
+        margin-right: 10px;
+        a {
+          font-size: 18px;
+        }
+      }
     }
   }
   main{
