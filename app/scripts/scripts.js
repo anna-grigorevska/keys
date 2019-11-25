@@ -115,6 +115,9 @@ $(document).ready(function () {
       }, 200);
     }
   });
+  setInterval(function () {
+    $('.arrow-up').toggleClass('hide');
+  }, 1000);
 });
 'use strict';
 

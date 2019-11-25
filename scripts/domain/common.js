@@ -28,4 +28,7 @@ $(document).ready(function() {
         }, 200)
     }
   })
+  setInterval(() => {
+    $('.arrow-up').toggleClass('hide');
+  }, 1000);
 });

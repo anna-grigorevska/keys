@@ -20,9 +20,14 @@
     .tell-header a{
       font-size: 30px;
     }
-    .navigation ul li {
-      a{
-        font-size: 19px;
+    
+    .navigation ul{
+      padding-left: 8px;
+      li {
+        margin-right: 13px;
+        a {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -325,15 +330,6 @@
     .tell-header a{
       font-size: 17px;
     }
-    .navigation ul{
-      padding-left: 8px;
-      li {
-        margin-right: 10px;
-        a {
-          font-size: 18px;
-        }
-      }
-    }
   }
   main{
     .home{
@@ -384,8 +380,10 @@
         font-size: 20px;
       }
       .video .player{
-        left: 50%;
-        transform: translate(-50%);
+        height: 300px;
+      }
+      .video-wrap{
+        height: 300px;
       }
     }
     .scheme{
