@@ -1,3 +1,37 @@
+
+@media(min-width: 1800px) {
+  main .scheme{
+    background-size: cover;
+  }
+}
+@media(min-width: 2000px) {
+  main{
+    .home{
+      padding-top: 170px;
+      .benefits {
+        margin-top: 15vw;
+      }
+    } 
+    .scheme {
+      padding-top: 15.5vw;
+      padding-bottom: 18vw;
+    }
+    .accesses{
+      padding-top: 65px;
+    }
+    .video-master {
+      margin-top: 0vw;
+    }
+    .form .wrap-form {
+      margin-top: 8vw;
+    }
+  } 
+}
+@media(min-width: 2300px) {
+  main .home .benefits {
+    margin-top: 18vw;
+  }
+}
 @media(min-width: 1200px) {
   .container{
     width: 1270px;
